@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--CSS y Java-->
     <link rel="stylesheet" href="./styles.css">
-    <title>Epic to do list byChris</title>
+    <title>Epic todo list byChris</title>
 </head>
 <body background="425923.jpg">
 
@@ -20,18 +20,15 @@
         <h1>¡Hola! Soy tu Organizador de tareas</h1>
         </header>
 
-        <div class="form-container">
-            <form>
-              <input type="text" placeholder="Agregar tarea...">
-              <button type="submit">Agregar</button>
-            </form>
-          </div>
-          <div class="tareas-container">
-            <ul class="tareas-lista">
-            </ul>
-          </div>
-              
+        <h1>To-Do List</h1>
 
-        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Ingrese una nueva tarea">
+            <button type="submit">➕</button>
+        </form>
+        <ul id="todo-list"></ul>
+
+          <script src="script.js"></script>
+
 </body>
 </html>
