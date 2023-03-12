@@ -12,6 +12,7 @@ formulario.addEventListener('submit', function(evento) {
     //Este crea el li
 const elementoLista = document.createElement('to-do-list-item');
 	elementoLista.setAttribute('finished','false'); //Atributo finished empieza como falso porque no ha sido finalizado
+	elementoLista.setAttribute('title','click para completar');
     elementoLista.textContent = textoEntrada;
 	elementoLista.addEventListener('click', function() {
         //Funciones de completar y de eliminar tarea, hay que hacerles click para que pasen las interacciones (addevenlistener click function)
@@ -23,6 +24,7 @@ const elementoLista = document.createElement('to-do-list-item');
 		} else {
 			elementoLista.classList.toggle('completado'); //En el css se cambia el texto a subrayado
 			elementoLista.setAttribute('finished','true'); //Artibuto finished termina como true para marcar
+			elementoLista.setAttribute('title','click para eliminar');
 		} 
 
 	});
