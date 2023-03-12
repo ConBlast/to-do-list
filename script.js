@@ -1,3 +1,4 @@
+
 const formulario = document.querySelector('#todo-form');
 const entrada = document.querySelector('#todo-input');
 const lista = document.querySelector('#todo-list');
@@ -10,7 +11,7 @@ formulario.addEventListener('submit', function(evento) {
 	}
 
     //Este crea el li
-const elementoLista = document.createElement('li');
+const elementoLista = document.createElement('to-do-list-item');
     elementoLista.textContent = textoEntrada;
 	elementoLista.addEventListener('click', function() {
         //Funciones de completar y de eliminar tarea, hay que hacerles click para que pasen las interacciones (addevenlistener click function)
@@ -28,3 +29,5 @@ const elementoLista = document.createElement('li');
 	entrada.value = '';
 
 });
+
+customElements.define('to-do-list-item',webComponent);
